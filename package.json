@@ -1,7 +1,7 @@
 {
   "name": "repo-analyzer",
   "version": "1.0.0",
-  "description": "Claude Code skill for deep architectural analysis of open-source projects",
+  "description": "AI coding agent skill for deep architectural analysis of open-source projects",
   "license": "MIT",
   "repository": {
     "type": "git",

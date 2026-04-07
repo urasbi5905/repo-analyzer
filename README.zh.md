@@ -1,6 +1,8 @@
 # Repo Analyzer
 
-一个 [Claude Code](https://claude.ai/claude-code) 技能，用于对开源项目进行深度架构分析，生成专业级架构报告——包含设计洞察、权衡分析和 Mermaid 架构图。
+一个 AI 编程 Agent 技能，用于对开源项目进行深度架构分析，生成专业级架构报告——包含设计洞察、权衡分析和 Mermaid 架构图。
+
+兼容 [Claude Code](https://claude.ai/claude-code)、[Codex](https://github.com/openai/codex)、[OpenClaw](https://github.com/anthropics/openclaw) 等所有支持 Skills 格式的 AI 编程 Agent。
 
 **[English Documentation](README.md)**
 
