@@ -1,0 +1,20 @@
+{
+  "name": "repo-analyzer",
+  "owner": {
+    "name": "yzddmr6"
+  },
+  "metadata": {
+    "description": "Deep architectural analysis of open-source projects with professional reports",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "repo-analyzer",
+      "description": "Deep architectural analysis of open-source projects with professional reports",
+      "source": "./",
+      "skills": [
+        "./skills/repo-analyzer"
+      ]
+    }
+  ]
+}
